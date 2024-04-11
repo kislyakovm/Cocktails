@@ -18,7 +18,8 @@ public class CocktailAdapter extends RecyclerView.Adapter<CocktailAdapter.Cockta
     Context context;
     private ArrayList<Cocktails> cocktails;
 
-    public CocktailAdapter(ArrayList<Cocktails> cocktails) {
+    public CocktailAdapter(Context context, ArrayList<Cocktails> cocktails) {
+        this.context = context;
         this.cocktails = cocktails;
     }
 
